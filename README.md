@@ -1,11 +1,13 @@
 # Salary Prediction based on job description features
-**Introduction**
+## **Introduction**
+
+
 For this salary prediction project, I examined different attributes of employee information to predict their salary.
 
-<br>**Data**<br />
+## <br>**Data**<br />
 The data is part of an existing data set that includes employee information. The features of the dataset include job id, company id, job type, degree, major, industry, years experience and miles the employee lives from from the metropolitan city. The size of the dataset is 1,000,000 rows.
 
-<br>**Different Features in the Dataset**<br />
+## <br>**Different Features in the Dataset**<br />
 <br>•	JobId<br />
 <br>•	CompanyId<br />
 <br>•	JobType<br />
@@ -16,13 +18,13 @@ The data is part of an existing data set that includes employee information. The
 <br>•	Miles from metropolis<br />
 <br>•	Salary (Variable to predict)<br />
 
-<br>**Preprocessing**<br />
+## <br>**Preprocessing**<br />
 For the data cleaning process, I followed the steps listed below:  
 •	Removed 5 rows where salary equaled 0, which indicated missing values  
 •	Removed the outliers, salaries in more than 75 percentile which constituted to 7117 rows i.e 0.7% of total data.   
 •	Records with a degree and major listed as "None" were replaced with "OTHER"  
 
-<br>**Exploratory Data Analysis**<br />
+## <br>**Exploratory Data Analysis**<br />
 During the analysis of the dataset we where able to find out that there is not much variance across the different company id’s and hence can be ignored while building our model.  
 ![variance](images/CompanyId.png)
  
@@ -50,7 +52,7 @@ The line plot below also shows almost a linear relationship between miles from m
 
 ![variance](images/metropolis.png)
  
-<br>**Modeling**<br />  
+## <br>**Modeling**<br />  
 After examining the data, I removed outliers below the 25th and above the 75th percentile, keeping the inter quartile range. This resulted in 992,418 records in our dataset.    
 <br>After reviewing the EDA process, I established the following features as predictors for training the model:<br />    
 •	Removed Company Id as there was not much variance among the companies and hence would not affect the result.   
@@ -70,7 +72,7 @@ From the performance we see that Gradient Boosting Regressor performs better com
 The performance of linear regression can also be improved by using polynomial features which would help fit the non linear relationship between feature and a target(could not do this as my system was going for a toss)
 
 
-**Summary**  
+## **Summary**  
 
 
 To end with we see that the Gradient Boosting Regressor model fits the data the best and is able to get a good error metric of 356 which is a very reasonable estimate as compared to our baseline error metric where we used the industry average perspective.  
