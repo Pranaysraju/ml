@@ -78,6 +78,8 @@ The performance of linear regression can also be improved by using polynomial fe
 To end with we see that the Gradient Boosting Regressor model fits the data the best and is able to get a good error metric of 356 which is a very reasonable estimate as compared to our baseline error metric where we used the industry average perspective.  
 We also created a pipeline that takes both the training and the test scripts and tunes the model and saves the test outcomes to a csv file.
 
-Some features that the dataset can include for better predictions are :
-•	Company Jumps: A person changing companies more frequently tends to have a higher salary due to hikes.
+Some features that the dataset can include for better predictions are :  
+
+
+•	Company Jumps: A person changing companies more frequently tends to have a higher salary due to hikes.  
 •	Years within the company also can be a good factor.
